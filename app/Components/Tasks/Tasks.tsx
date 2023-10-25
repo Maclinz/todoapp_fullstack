@@ -118,6 +118,11 @@ const TaskStyled = styled.main`
     border: 3px dashed ${(props) => props.theme.colorGrey5};
     transition: all 0.3s ease;
 
+    i {
+      font-size: 1.5rem;
+      margin-right: 0.2rem;
+    }
+
     &:hover {
       background-color: ${(props) => props.theme.colorGrey5};
       color: ${(props) => props.theme.colorGrey0};
