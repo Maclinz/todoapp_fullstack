@@ -24,6 +24,26 @@ body {
   height: 100vh;
 }
 
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
 .loader {
   width: 48px;
   height: 48px;
