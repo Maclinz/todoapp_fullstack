@@ -4,7 +4,7 @@ import React from "react";
 import styled from "styled-components";
 import CreateContent from "../Modals/CreateContent";
 import TaskItem from "../TaskItem/TaskItem";
-import { plus } from "@/app/utils/Icons";
+import { add, plus } from "@/app/utils/Icons";
 import Modal from "../Modals/Modal";
 
 interface Props {
@@ -36,7 +36,7 @@ function Tasks({ title, tasks }: Props) {
           />
         ))}
         <button className="create-task" onClick={openModal}>
-          {plus}
+          {add}
           Add New Task
         </button>
       </div>
