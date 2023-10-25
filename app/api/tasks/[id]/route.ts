@@ -20,7 +20,6 @@ export async function DELETE(
       },
     });
 
-    console.log("TASK DELETED: ", task);
     return NextResponse.json(task);
   } catch (error) {
     console.log("ERROR DELETING TASK: ", error);
