@@ -42,6 +42,8 @@ const ModalStyled = styled.div`
   }
 
   .modal-content {
+    margin: 0 1rem;
+
     padding: 2rem;
     position: relative;
     max-width: 630px;
@@ -52,6 +54,10 @@ const ModalStyled = styled.div`
     background-color: ${(props) => props.theme.colorBg2};
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
     border-radius: ${(props) => props.theme.borderRadiusMd2};
+
+    @media screen and (max-width: 450px) {
+      font-size: 90%;
+    }
   }
 `;
 

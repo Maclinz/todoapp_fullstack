@@ -76,6 +76,11 @@ const TaskStyled = styled.main`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 768px) {
+      top: 3rem;
+      right: 3.5rem;
+    }
   }
 
   .tasks {

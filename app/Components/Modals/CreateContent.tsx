@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import toast from "react-hot-toast";
 import styled from "styled-components";
 import Button from "../Button/Button";
-import { plus } from "@/app/utils/Icons";
+import { add, plus } from "@/app/utils/Icons";
 
 function CreateContent() {
   const [title, setTitle] = useState("");
@@ -127,7 +127,7 @@ function CreateContent() {
         <Button
           type="submit"
           name="Create Task"
-          icon={plus}
+          icon={add}
           padding={"0.8rem 2rem"}
           borderRad={"0.8rem"}
           fw={"500"}
@@ -151,6 +151,10 @@ const CreateContentStyled = styled.form`
     position: relative;
     margin: 1.6rem 0;
     font-weight: 500;
+
+    @media screen and (max-width: 450px) {
+      margin: 1rem 0;
+    }
 
     label {
       margin-bottom: 0.5rem;
@@ -176,6 +180,17 @@ const CreateContentStyled = styled.form`
 
   .submit-btn button {
     transition: all 0.35s ease-in-out;
+
+    @media screen and (max-width: 500px) {
+      font-size: 0.9rem !important;
+      padding: 0.6rem 1rem !important;
+
+      i {
+        font-size: 1.2rem !important;
+        margin-right: 0.5rem !important;
+      }
+    }
+
     i {
       color: ${(props) => props.theme.colorGrey0};
     }
